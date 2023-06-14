@@ -1,6 +1,8 @@
-use std::io;
+use std::{io, env};
 
 fn main() {
+    let args: Vec<String> = env::args().collect();
+    dbg!(args);
     println!("Guess the number!");
 
     println!("Please input your guess.");
@@ -13,3 +15,4 @@ fn main() {
 
     println!("You guessed: {guess}");
 }
+
